@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "866dd3adcaaa9324",
+    "type": "split",
+    "children": [
+      {
+        "id": "78ac39cb2c7da86f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41b7f405bd0566fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian Vault/_templates/Paper Template.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Paper Template.md"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0c28a44f3a5caba",
+    "type": "split",
+    "children": [
+      {
+        "id": "b02d2a372eaf1c4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6eae4ecf5167599d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "75acb1e756c8b001",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3901d07932d339dc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ecd0a87b7c8fc5f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d56c2e10666437c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd7b5f40a4fa869f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Obsidian Vault/_templates/Paper Template.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a21b8cfdcd2126d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Obsidian Vault/_templates/Paper Template.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4ad52027f683af7f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c103a0a28a0621e4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e4584a24bd395690",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Obsidian Vault/_templates/Paper Template.md.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6eae4ecf5167599d",
+  "lastOpenFiles": [
+    "Code",
+    "Obsidian Vault/LLM Serving/L13 - Simulation & Execution.md",
+    "Obsidian Vault/LLM Serving/L12 - Multi-Tenancy.md",
+    "Obsidian Vault/LLM Serving/L11 - Disaggregated Serving.md",
+    "Obsidian Vault/LLM Serving/L8 - Communication.md",
+    "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
+    "Obsidian Vault/LLM Serving/L2 - Requests Router.md",
+    "Obsidian Vault/LLM Serving/L0 - Fundamentals of LLMs.md",
+    "Primary Papers Split/Primary/Naveen/2022 - Orca.pdf",
+    "Obsidian Vault/_utilities/Markdown CheatSheet.md",
+    "Obsidian Vault/_templates/Paper Template.md.md"
+  ]
+}
