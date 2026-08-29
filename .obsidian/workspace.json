@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "78ac39cb2c7da86f",
+        "id": "5dbe8f0d30e8b0be",
         "type": "tabs",
         "children": [
           {
-            "id": "41b7f405bd0566fb",
+            "id": "6a68f2884bbb9597",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Obsidian Vault/_templates/Paper Template.md.md",
-                "mode": "source",
-                "source": false
+                "aFile": "**2024 - Preble**.md",
+                "bFile": "**2024 - Preble**.md",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Paper Template.md"
+              "icon": "diff",
+              "title": "Diff: **2024 - Preble**  (Index)"
             }
           }
         ]
@@ -169,13 +170,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "1ff2f142c219234f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,12 +196,28 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6eae4ecf5167599d",
+  "active": "6a68f2884bbb9597",
   "lastOpenFiles": [
-    "Code",
+    "Obsidian Vault/LLM Serving/papers/Index.md",
+    "Obsidian Vault/LLM Serving/papers/Orca.md",
+    "Obsidian Vault/LLM Serving/papers/Splitwise.md",
+    "Obsidian Vault/LLM Serving/Index.md",
+    "**2024 - Preble**.md",
+    "Primary Papers Split/Primary/Sriram/2026 - PiLLM.pdf",
+    "Primary Papers Split/Primary/Sriram/2026 - Geometry aware online scheduling.pdf",
+    "Primary Papers Split/Primary/Sriram/2026 - General Non-Clairvoyant KV-Cache Scheduling via Regime-Aware Routing.pdf",
+    "Primary Papers Split/Primary/Sriram/2026 - Efficiency and Cost Alignment in Batched LLM.pdf",
+    "Primary Papers Split/Primary/Sriram/2025 - Locality-aware Fair Scheduling in LLM Serving.pdf",
+    "Primary Papers Split/Primary/Sriram/2025 - FairBatching.pdf",
+    "Primary Papers Split/Primary/Sriram/2025 - Equinox.pdf",
+    "Primary Papers Split/Primary/Sriram/2025 - Adaptively Robust LLM Inference Optimization under Prediction Uncertainty.pdf",
+    "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf",
+    "Primary Papers Split/Primary/Sasank/2024 - Preble.pdf",
+    "Obsidian Vault/_templates/Paper Template.md.md",
     "Obsidian Vault/LLM Serving/L13 - Simulation & Execution.md",
     "Obsidian Vault/LLM Serving/L12 - Multi-Tenancy.md",
     "Obsidian Vault/LLM Serving/L11 - Disaggregated Serving.md",
@@ -198,8 +225,6 @@
     "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
     "Obsidian Vault/LLM Serving/L2 - Requests Router.md",
     "Obsidian Vault/LLM Serving/L0 - Fundamentals of LLMs.md",
-    "Primary Papers Split/Primary/Naveen/2022 - Orca.pdf",
-    "Obsidian Vault/_utilities/Markdown CheatSheet.md",
-    "Obsidian Vault/_templates/Paper Template.md.md"
+    "Obsidian Vault/_utilities/Markdown CheatSheet.md"
   ]
 }
