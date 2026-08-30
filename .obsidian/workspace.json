@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5dbe8f0d30e8b0be",
+        "id": "50622bb104bd429b",
         "type": "tabs",
         "children": [
           {
-            "id": "6a68f2884bbb9597",
+            "id": "bc7db65d09fc40e4",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "**2024 - Preble**.md",
-                "bFile": "**2024 - Preble**.md",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: **2024 - Preble**  (Index)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -200,10 +195,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a68f2884bbb9597",
+  "active": "bc7db65d09fc40e4",
   "lastOpenFiles": [
-    "Obsidian Vault/LLM Serving/papers/Index.md",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
+    "Obsidian Vault/LLM Serving/papers/Index.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
     "Obsidian Vault/LLM Serving/Index.md",
     "**2024 - Preble**.md",
