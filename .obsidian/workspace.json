@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "50622bb104bd429b",
+        "id": "e68aab29f7094a2d",
         "type": "tabs",
         "children": [
           {
-            "id": "bc7db65d09fc40e4",
+            "id": "6a449c6dd906cbdc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -195,8 +195,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc7db65d09fc40e4",
+  "active": "6a449c6dd906cbdc",
   "lastOpenFiles": [
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133257.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133543.png",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
     "Obsidian Vault/LLM Serving/papers/Index.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
