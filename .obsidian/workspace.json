@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e68aab29f7094a2d",
+        "id": "5bd3551e42712570",
         "type": "tabs",
         "children": [
           {
-            "id": "6a449c6dd906cbdc",
+            "id": "60e446067570e882",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "pdf",
+              "state": {
+                "file": "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2024 - Fairness in Serving Large Language Models"
             }
           }
         ]
@@ -195,8 +197,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a449c6dd906cbdc",
+  "active": "60e446067570e882",
   "lastOpenFiles": [
+    "Obsidian Vault/LLM Serving/L6 - KV Cache Management.md",
+    "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
+    "Obsidian Vault/LLM Serving/L2 - Requests Router.md",
+    "Obsidian Vault/LLM Serving/L1 - Workloads.md",
+    "Obsidian Vault/LLM Serving/L0 - Fundamentals of LLMs.md",
+    "Obsidian Vault/LLM Serving/Index.md",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133257.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
@@ -204,7 +212,6 @@
     "Obsidian Vault/LLM Serving/papers/Orca.md",
     "Obsidian Vault/LLM Serving/papers/Index.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
-    "Obsidian Vault/LLM Serving/Index.md",
     "**2024 - Preble**.md",
     "Primary Papers Split/Primary/Sriram/2026 - PiLLM.pdf",
     "Primary Papers Split/Primary/Sriram/2026 - Geometry aware online scheduling.pdf",
@@ -221,9 +228,6 @@
     "Obsidian Vault/LLM Serving/L12 - Multi-Tenancy.md",
     "Obsidian Vault/LLM Serving/L11 - Disaggregated Serving.md",
     "Obsidian Vault/LLM Serving/L8 - Communication.md",
-    "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
-    "Obsidian Vault/LLM Serving/L2 - Requests Router.md",
-    "Obsidian Vault/LLM Serving/L0 - Fundamentals of LLMs.md",
     "Obsidian Vault/_utilities/Markdown CheatSheet.md"
   ]
 }
