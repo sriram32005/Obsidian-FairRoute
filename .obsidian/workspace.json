@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5bd3551e42712570",
+        "id": "9b9448d887145551",
         "type": "tabs",
         "children": [
           {
-            "id": "60e446067570e882",
+            "id": "77bec29e43d7323a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "split-diff-view",
               "state": {
-                "file": "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf"
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file-text",
-              "title": "2024 - Fairness in Serving Large Language Models"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -197,8 +199,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60e446067570e882",
+  "active": "77bec29e43d7323a",
   "lastOpenFiles": [
+    "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf",
     "Obsidian Vault/LLM Serving/L6 - KV Cache Management.md",
     "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
     "Obsidian Vault/LLM Serving/L2 - Requests Router.md",
@@ -221,7 +224,6 @@
     "Primary Papers Split/Primary/Sriram/2025 - FairBatching.pdf",
     "Primary Papers Split/Primary/Sriram/2025 - Equinox.pdf",
     "Primary Papers Split/Primary/Sriram/2025 - Adaptively Robust LLM Inference Optimization under Prediction Uncertainty.pdf",
-    "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf",
     "Primary Papers Split/Primary/Sasank/2024 - Preble.pdf",
     "Obsidian Vault/_templates/Paper Template.md.md",
     "Obsidian Vault/LLM Serving/L13 - Simulation & Execution.md",
