@@ -8,17 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6a68f2884bbb9597",
+            "id": "51979e7c3a935c23",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Primary Papers Split/Primary/Sasank/2025 - kLPM.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2025 - kLPM"
+            }
+          }
+        ]
+      },
+      {
+        "id": "558c81683117d559",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57001622b81a19ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
+                "file": "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024 - Preble"
+              "title": "2025 - kLPM"
             }
           }
         ]
@@ -199,8 +217,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6a68f2884bbb9597",
+  "active": "51979e7c3a935c23",
   "lastOpenFiles": [
+    "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
+    "Obsidian Vault/LLM Serving/papers/Index.md",
+    "Obsidian Vault/LLM Serving/Index.md",
+    "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
     "Primary Papers Split/Primary/Sasank/2024 - Preble.pdf",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831201542.png",
@@ -212,16 +234,13 @@
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133257.png",
-    "Obsidian Vault/LLM Serving/papers/Index.md",
     "conflict-files-obsidian-git.md",
-    "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
     "Obsidian Vault/LLM Serving/papers/attachements",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
     "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
     "Obsidian Vault/LLM Serving/papers/vLLM.md",
     "Obsidian Vault/_templates/Paper Template.md.md",
-    "Obsidian Vault/LLM Serving/Index.md",
     "**2024 - Preble**.md",
     "Primary Papers Split/Primary/Sriram/2026 - PiLLM.pdf",
     "Primary Papers Split/Primary/Sriram/2026 - Geometry aware online scheduling.pdf",
