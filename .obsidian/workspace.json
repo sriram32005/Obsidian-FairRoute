@@ -4,50 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "f83f852857a85c82",
+        "id": "f36126ac52f4e48d",
         "type": "tabs",
         "children": [
           {
-            "id": "8c03b586336b4fca",
+            "id": "2b7e9d552461760c",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "9efe29e726853343",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Obsidian Vault/LLM Serving/papers/Index.md",
-                "bFile": "Obsidian Vault/LLM Serving/papers/Index.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Index  (Working Tree)"
-            }
-          },
-          {
-            "id": "05683236bc73f3ef",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Obsidian Vault/LLM Serving/papers/Index.md",
-                "bFile": "Obsidian Vault/LLM Serving/papers/Index.md",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Index  (Index)"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,7 +195,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05683236bc73f3ef",
+  "active": "2b7e9d552461760c",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
