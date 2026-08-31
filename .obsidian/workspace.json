@@ -16,8 +16,24 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "9efe29e726853343",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
+                "bFile": "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: AlphaServe  (Index)"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 442.2109375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,8 +211,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c03b586336b4fca",
+  "active": "9efe29e726853343",
   "lastOpenFiles": [
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
+    "conflict-files-obsidian-git.md",
+    "Pasted image 20260831210759.png",
+    "Pasted image 20260831210401.png",
+    "Pasted image 20260831202149.png",
+    "Pasted image 20260831201542.png",
+    "Pasted image 20260831200456.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831210759.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831210401.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831202149.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831201542.png",
+    "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
     "Obsidian Vault/LLM Serving/papers/vLLM.md",
@@ -209,10 +237,6 @@
     "Obsidian Vault/LLM Serving/L1 - Workloads.md",
     "Obsidian Vault/LLM Serving/L0 - Fundamentals of LLMs.md",
     "Obsidian Vault/LLM Serving/Index.md",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133257.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133543.png",
     "**2024 - Preble**.md",
     "Primary Papers Split/Primary/Sriram/2026 - PiLLM.pdf",
     "Primary Papers Split/Primary/Sriram/2026 - Geometry aware online scheduling.pdf",
