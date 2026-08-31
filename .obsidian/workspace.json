@@ -11,10 +11,14 @@
             "id": "965ba3dfe63cd918",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -197,6 +201,7 @@
   },
   "active": "965ba3dfe63cd918",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Paper PDFs/Sasank/2024 - Preble.pdf",
     "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
@@ -212,7 +217,6 @@
     "Obsidian Vault/LLM Serving/Index.md",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133543.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
-    "conflict-files-obsidian-git.md",
     "Obsidian Vault/LLM Serving/papers/attachements",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
     "Obsidian Vault/LLM Serving/papers/Splitwise.md",
