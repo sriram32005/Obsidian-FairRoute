@@ -28,7 +28,7 @@
 
 # Primary Papers:
 
-1. 2024 - Preble
+1. [[2024 - Preble]]
 2. 2025 - kLPM
 3. 2025 - SkyWalker
 4. 2025 - NexusSched
