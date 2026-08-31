@@ -23,17 +23,31 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
-                "bFile": "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
+                "aFile": "Obsidian Vault/LLM Serving/papers/Index.md",
+                "bFile": "Obsidian Vault/LLM Serving/papers/Index.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Index  (Working Tree)"
+            }
+          },
+          {
+            "id": "05683236bc73f3ef",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "Obsidian Vault/LLM Serving/papers/Index.md",
+                "bFile": "Obsidian Vault/LLM Serving/papers/Index.md",
                 "aRef": "HEAD",
                 "bRef": ""
               },
               "icon": "diff",
-              "title": "Diff: AlphaServe  (Index)"
+              "title": "Diff: Index  (Index)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -211,10 +225,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9efe29e726853343",
+  "active": "05683236bc73f3ef",
   "lastOpenFiles": [
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
     "conflict-files-obsidian-git.md",
+    "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
     "Pasted image 20260831210759.png",
     "Pasted image 20260831210401.png",
     "Pasted image 20260831202149.png",
