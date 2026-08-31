@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "5dbe8f0d30e8b0be",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "51979e7c3a935c23",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Primary Papers Split/Primary/Sasank/2025 - kLPM.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2025 - kLPM"
-            }
-          }
-        ]
-      },
-      {
         "id": "558c81683117d559",
         "type": "tabs",
         "children": [
@@ -31,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
+                "file": "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025 - kLPM"
+              "title": "2024 - Preble"
             }
           }
         ]
@@ -217,23 +199,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51979e7c3a935c23",
+  "active": "57001622b81a19ff",
   "lastOpenFiles": [
-    "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
-    "Obsidian Vault/LLM Serving/papers/Index.md",
-    "Obsidian Vault/LLM Serving/Index.md",
-    "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
-    "Primary Papers Split/Primary/Sasank/2024 - Preble.pdf",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831200456.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831201542.png",
-    "Pasted image 20260831200456.png",
+    "Obsidian Vault/LLM Serving/papers/2024 - Preble.md",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831210759.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831210401.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831202149.png",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831201542.png",
+    "Obsidian Vault/LLM Serving/papers/Index.md",
+    "Obsidian Vault/LLM Serving/papers/2025 - kLPM.md",
+    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260831201542.png",
+    "Primary Papers Split/Primary/Sasank/2025 - kLPM.pdf",
+    "Obsidian Vault/LLM Serving/Index.md",
+    "Primary Papers Split/Primary/Sasank/2024 - Preble.pdf",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133543.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
-    "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133257.png",
     "conflict-files-obsidian-git.md",
     "Obsidian Vault/LLM Serving/papers/attachements",
     "Obsidian Vault/LLM Serving/papers/Orca.md",
@@ -249,7 +231,6 @@
     "Primary Papers Split/Primary/Sriram/2025 - Locality-aware Fair Scheduling in LLM Serving.pdf",
     "Primary Papers Split/Primary/Sriram/2025 - FairBatching.pdf",
     "Primary Papers Split/Primary/Sriram/2025 - Equinox.pdf",
-    "Primary Papers Split/Primary/Sriram/2025 - Adaptively Robust LLM Inference Optimization under Prediction Uncertainty.pdf",
     "Obsidian Vault/LLM Serving/L13 - Simulation & Execution.md",
     "Obsidian Vault/LLM Serving/L12 - Multi-Tenancy.md",
     "Obsidian Vault/LLM Serving/L11 - Disaggregated Serving.md",
