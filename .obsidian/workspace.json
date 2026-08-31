@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9b9448d887145551",
+        "id": "f83f852857a85c82",
         "type": "tabs",
         "children": [
           {
-            "id": "77bec29e43d7323a",
+            "id": "8c03b586336b4fca",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -199,8 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "77bec29e43d7323a",
+  "active": "8c03b586336b4fca",
   "lastOpenFiles": [
+    "Obsidian Vault/LLM Serving/papers/Orca.md",
+    "Obsidian Vault/LLM Serving/papers/Splitwise.md",
+    "Obsidian Vault/LLM Serving/papers/vLLM.md",
+    "Obsidian Vault/LLM Serving/papers/Index.md",
+    "Obsidian Vault/LLM Serving/papers/AlphaServe.md",
     "Primary Papers Split/Primary/Sriram/2024 - Fairness in Serving Large Language Models.pdf",
     "Obsidian Vault/LLM Serving/L6 - KV Cache Management.md",
     "Obsidian Vault/LLM Serving/L4 - Requests Batcher.md",
@@ -212,9 +213,6 @@
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133328.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133536.png",
     "Obsidian Vault/LLM Serving/papers/attachments/Pasted image 20260828133543.png",
-    "Obsidian Vault/LLM Serving/papers/Orca.md",
-    "Obsidian Vault/LLM Serving/papers/Index.md",
-    "Obsidian Vault/LLM Serving/papers/Splitwise.md",
     "**2024 - Preble**.md",
     "Primary Papers Split/Primary/Sriram/2026 - PiLLM.pdf",
     "Primary Papers Split/Primary/Sriram/2026 - Geometry aware online scheduling.pdf",
