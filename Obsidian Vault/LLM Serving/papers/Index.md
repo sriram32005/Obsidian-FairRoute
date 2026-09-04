@@ -37,7 +37,7 @@
 7. 2026 - Online Routing at Scale / BalanceRoute
 8. 2026 - RouteBalance
 9. 2026 - Simple is Better
-10. 2024 - Fairness in Serving Large Language Models
+10. [[2024 - Fairness in Serving Large Language Models]]
 11. 2025 - Locality-aware Fair Scheduling in LLM Serving
 12. 2025 - Equinox
 13. 2025 - FairBatching
