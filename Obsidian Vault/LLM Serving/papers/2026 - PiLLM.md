@@ -1,16 +1,19 @@
 ---
-title: ""  
-authors: []  
-year:  
-venue: ""  
-paper_type: research  
-status: unread  
-rating:  
-url: ""  
-pdf: ""  
-tags:   
+title: "PiLLM: Resource-efficient LLM Inference Using Workload Prediction"
+authors:
+  - Yunqian Fan, Shihao Bai, Ruihao Gong, Zaijun Wang, Rui Fan  
+year: "2026"
+venue: ""
+paper_type: research
+status: unread
+rating:
+url: ""
+pdf: ""
+tags:
 ---
-
+- No pre-emption (Not Fair)
+- Not KV-Cache aware (No Locality)
+- Does Batched Prediction {if the request can be served by a node?, more nodes required?, }
 
 # 2026 - PiLLM
 
