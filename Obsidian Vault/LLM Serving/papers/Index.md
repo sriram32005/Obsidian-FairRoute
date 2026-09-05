@@ -45,7 +45,7 @@
 15. 2026 - Efficiency and Cost Alignment in Batched LLM Serving via Resource-Fair Scheduling
 16. 2026 - General Non-Clairvoyant KV-Cache Scheduling via Regime-Aware Routing
 17. 2026 - Geometry-Aware Online Scheduling for LLM Serving
-18. 2026 - PiLLM
+18. [[2026 - PiLLM]]
 19. 2022 - Orca
 20. 2024 - Llumnix
 21. 2026 - LAPS
