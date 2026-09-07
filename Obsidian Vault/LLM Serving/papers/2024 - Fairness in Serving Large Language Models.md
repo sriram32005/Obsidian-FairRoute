@@ -5,7 +5,7 @@ authors:
 year: "2024"
 venue: OSDI 2024 (the 18th USENIX Symposium on Operating Systems Design and Implementation)
 paper_type: research
-status: reading
+status: read
 rating:
 url: "[https://arxiv.org/abs/2401.00588](https://arxiv.org/abs/2401.00588)"
 pdf: "[[2024 - Fairness in Serving Large Language Models.pdf]]"
