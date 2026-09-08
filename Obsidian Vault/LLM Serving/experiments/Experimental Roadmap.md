@@ -111,11 +111,12 @@ This turns the original three design tensions in the project description into co
 
 ### 4.2 Locality / prefix-cache metrics
 
-| Metric | Formula | Notes |
-|---|---|---|
-| **Served KV-cache hit rate** | Fraction of prefill tokens served from cache vs. recomputed | CacheRoute reports 93.2±0.5% vs. 64.1±1.3% cache-blind (project file) — use as a calibration anchor |
-| **Prefix-match ratio** | Matched-prefix length / total prompt length, averaged per request | Locality term's own operationalization (Section 3.2) |
-| **KV-recompute savings (FLOPs or wall-time)** | Compute saved vs. a no-cache baseline | Ties locality directly to cost/energy framing used by the *Universal Load Balancing Principle* paper (project file) |
+| Metric                                        | Formula                                                           | Notes                                                                                                                                                                                                            |
+| --------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Served KV-cache hit rate**                  | Fraction of prefill tokens served from cache vs. recomputed       | CacheRoute reports 93.2±0.5% vs. 64.1±1.3% cache-blind (project file) — use as a calibration anchor.<br><br>==How will they check KV Cache Hit ? Is it similar to prefix cache hit or chunks/token level hit ?== |
+| **Prefix-match ratio**                        | Matched-prefix length / total prompt length, averaged per request | Locality term's own operationalization (Section 3.2)                                                                                                                                                             |
+| **KV-recompute savings (FLOPs or wall-time)** | Compute saved vs. a no-cache baseline                             | Ties locality directly to cost/energy framing used by the *Universal Load Balancing Principle* paper (project file)                                                                                              |
+|                                               |                                                                   |                                                                                                                                                                                                                  |
 
 ### 4.3 Prediction-quality metrics
 
