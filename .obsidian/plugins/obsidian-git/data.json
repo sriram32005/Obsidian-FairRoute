@@ -1,6 +1,6 @@
 {
-  "commitMessage": "updated at {{date}} by sriram32005",
-  "autoCommitMessage": "updated at {{date}} by sriram32005",
+  "commitMessage": "updated at {{date}}",
+  "autoCommitMessage": "updated at {{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
