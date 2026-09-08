@@ -1,118 +1,56 @@
 ---
-title: ""  
-authors: []  
-year:  
-venue: ""  
-paper_type: research  
-status: unread  
-rating:  
-url: ""  
-pdf: ""  
-tags:   
+title: "SkyWalker: A Locality-Aware Cross-Region Load Balancer for LLM Inferenc"
+authors:
+  - Tian Xia† Ziming Mao† Jamison Kerney† Ethan J. Jackson† Zhifei Li§ Jiarong Xing†¶ Scott Shenker†⋄ Ion Stoica†
+year: 9 NOV 2025
+venue: EUROSYS ’26
+paper_type: research
+status: read
+rating:
+url: ""
+pdf: ""
+tags:
 ---
 
 
 # 2025 - SkyWalker
 
 > [!abstract] One-Line Summary  
-> Write the entire paper's contribution in **1–2 sentences**.
+> Simplest algorithm + Simple Implementation + Nothing to takeaway to fairroute
 
 ---
 
-## 1. Paper Metadata
-
-| Field                   | Notes                                                           |
-| ----------------------- | --------------------------------------------------------------- |
-| **Authors**             |                                                                 |
-| **Year**                |                                                                 |
-| **Venue**               |                                                                 |
-| **Paper Type**          | System / Algorithm / Scheduling / Routing / Simulation / Theory |
-| **Code Available?**     | Yes / No                                                        |
-| **Artifact Available?** | Yes / No                                                        |
-| **Related System**      | vLLM / Sarathi / Custom / Other                                 |
-
----
-
-# 2. Problem
+# Problem
 
 ## Problem Statement
 
-**What precise problem does this paper solve?**
+Serving Large Language Models (LLMs) efficiently in multi-region setups remains a challenge. Due to cost and GPU availability concerns, providers typically deploy LLMs in multiple regions using instance with long-term commitments, like reserved instances or on-premise clusters, which are often underutilized due to their region-local traffic handling and diurnal traffic variance.
 
-## Why Does This Problem Matter?
+The reserved instances or on-premise clusters are inflexible—providers cannot increase or decrease capacity within a region as demand shifts. As a result, providers must allocate enough instances in each region to meet peak demand, which can result in high and often wasted costs. 
 
-## Why Do Existing Approaches Fail?
+The challenge is further exacerbated in multi-region deploy- ments, where providers must provision for peak load in every region independently. This leads to resource fragmentation and underutilization during off-peak hours.
 
-|Existing Approach|Limitation|
-|---|---|
-|||
-|||
-|||
+Providers must either provision for peak demand for all regions or pay for the flexibility of on-demand instances and take the risk of GPU unavailability.
 
 ---
 
-# 3. System Context
+# Solution Introduction
 
-## System Layer
+we suggest relaxing the regional rigidity of current approaches. Instead of attempting to match regional capacity to regional demand, providers make reservations for peak global demand and partition those reservations across the regions closest to their users.
 
-- [ ]  Cluster Routing
-    
-- [ ]  Request Scheduling
-    
-- [ ]  Continuous Batching
-    
-- [ ]  Prefill Scheduling
-    
-- [ ]  Decode Scheduling
-    
-- [ ]  KV Cache Management
-    
-- [ ]  GPU Scheduling
-    
-- [ ]  Distributed Inference
-    
-- [ ]  Simulation / Evaluation Infrastructure
-    
-- [ ]  Other:
-    
+Following this approach, when a region is overloaded, it can offload requests to other regions with excess capacity. By reserving for global peak demand and enabling cross-region traffic handling, a system can improve GPU utilization and reduce overall serving costs.
 
-## Target Workload
+Unfortunately, this cannot be achieved by simply deploy- ing centralized load balancers in a single zone , as this introduces high latency due to cross-region communication and creates both a performance bottleneck and a single point of failure.
 
-- [ ]  Multi-tenant
-    
-- [ ]  Prefix Sharing
-    
-- [ ]  Bursty Traffic
-    
-- [ ]  SLO-aware
-    
-- [ ]  Long-context
-    
-- [ ]  Mixed Prefill / Decode
-    
-- [ ]  Heterogeneous Requests
-    
-- [ ]  Interactive Serving
-    
-- [ ]  Batch / Offline Serving
-    
+To enable cross-region traffic handling without sacrific- ing performance, we design SkyWalker, a cross-region load balancer for LLM inference.
 
-### Workload Characteristics
+![[Pasted image 20260903194519.png]]
 
-- [ ] Number of tenants:
-    
-- [ ] Arrival pattern:
-    
-- [ ] Prompt length:
-    
-- [ ] Output length:
-    
-- [ ] Prefix overlap:
-    
-- [ ] Burstiness:
-    
-- [ ] SLO assumptions:
-    
+As shown in Figure 1(c), SkyWalker deploys at least one load balancer in each re- gion as the first point of contact for requests, ensuring low- latency and avoiding centralized bottlenecks. These regional load balancers collaboratively coordinate traffic across re- gions to handle load imbalances. 
+
+Two key challenges in multi-region load balancing:
+1. Key-Value (KV Cache) awarness -> Soln: Two routing algorithms : consistent hashing + multi-region prefix trie
+2. LLM Inference Load unpredictability -> Soln:  selective pushing algorithm
 
 ---
 
@@ -121,561 +59,124 @@ tags:
 ## Core Insight
 
 > What is the **one central idea** that distinguishes this paper?
+> 
+> Serving Large Language Models (LLMs) efficiently in multi-region setups remains a challenge. Due to cost and GPU availability concerns, providers typically deploy LLMs in multiple regions using instance with long-term commitments, like reserved instances or on-premise clusters, which are often underutilized due to their region-local traffic handling and diurnal traffic variance.
+> The reserved instances or on-premise clusters are inflexible—providers cannot increase or decrease capacity within a region as demand shifts. As a result, providers must allocate enough instances in each region to meet peak demand, which can result in high and often wasted costs. 
 
 ## Main Contributions
 
-## What Is Actually Novel?
+- Identifying the need for cross-region traffic handling to aggregate diurnal patterns across multiple geographical regions and reduce global serving cost. 
+- Proposing two mechanisms to provide effective cross-region routing: prefix-aware routing to improve cache locality and performance, and selective pushing based on pending re- quests at each replica to reduce load imbalance. 
+- A comprehensive evaluation for SkyWalker, compared to existing production and research systems across a variety of workloads. 
+- An open-source system SkyWalker to stimulate further research on cross-region load balancing for LLMs.
+
 
 ---
 
-# 5. Algorithm Classification
+# System Architecture
 
-## Algorithm Tags
+SkyWalker deploys load balancers in multiple regions as the first point of contact for local requests, and introduces a cross-region traffic handler that coordinates traffic between regional load balancers to mitigate cross-region load imbalance.
 
-- [ ]  Fairness
-    
-- [ ]  Locality
-    
-- [ ]  Prediction
-    
-- [ ]  Load Balancing
-    
-- [ ]  SLO-aware
-    
-- [ ]  Throughput Optimization
-    
-- [ ]  Latency Optimization
-    
-- [ ]  KV Cache Aware
-    
-- [ ]  Resource Allocation
-    
-- [ ]  Admission Control
-    
-- [ ]  Migration
-    
-- [ ]  Batching
-    
-- [ ]  Scheduling
-    
-- [ ]  Other:
-    
+It preserves the benefits of prefix sharing by supporting prefix-aware routing in two ways:
+1. A simple yet effective policy based on consistent hashing that requires minimal changes to existing load balancers
+2. A prefix-aware routing using partial prefix tree snapshots maintained at each load balancer
 
-## Combination
+To handle the LLM load unpredictability, SkyWalker introduces a **novel selective pushing mechanism** that balances load based on pending requests at each replica
 
-**Primary combination:**
+## Cross-Region Traffic Handling
 
-`Fairness / Locality / Prediction / ...`
+Two layer cross-region routing. The key idea is to coordinate cross-region traffic between load balancers, rather than directly between replicas. Each load balancer either routes requests to local replicas or forwards them to other load balancers in remote regions, which then make the final placement decisions within their region.
 
----
+## Multi-Region Prefix-Aware Routing
 
-# 6. Input Signals
+*Observation:* 
+1.   *The average prefix similarity within the same user is significantly higher than that across different users (2.47-7.60× more).*
+2.  *There is still some degree of cross-user prefix similarity, and the relative ratio between within-user and cross-user prefix similarity is workload-dependent (2.47× for ChatBot Arena and 7.60× for WildChat).*
 
-## What Does the Algorithm Observe?
+Two Solutions:
+### 1. SkyWalker-CH
 
-|Signal|Source|Why Is It Needed?|
-|---|---|---|
-|Queue Length|||
-|KV Cache Occupancy|||
-|Prefix Similarity|||
-|Token Count|||
-|Tenant ID|||
-|Historical Latency|||
-|GPU Utilization|||
-|Predicted Load|||
-|Other|||
+- It uses consistent hashing on user-provided keys (e.g., user ID, session ID) and routes a user request to a corresponding replica. 
+- It is implicitly prefix-aware: requests from the same user tend to share similar prefixes (e.g., context, chat history) and consistent hashing will map them to the same replica.
+- It adopts a ring hash scheme where each virtual node on the hash rings assigned to a replica and each replica can have multiple virtual nodes, allowing balanced key distribution across replicas.
 
-## Signal Collection Overhead
+It perfoms consistent hashing at both layers:
+1. Load balancer routes requests to other balancers based on consistent hashing
+2. Each balancer applies consistent hashing to assign the request to one of its managed replicas
 
-- [ ] Centralized or distributed?
-    
-- [ ] Push or pull telemetry?
-    
-- [ ] Update frequency:
-    
-- [ ] Metadata size:
-    
-- [ ] Potential bottleneck:
-    
+Since SkyWalker-CH focuses only on within-user prefix similarity, there are cases where SkyWalker-CH falls short of being optimal. They are: 
+1. Cross-User Prefix Sharing
+2. Bursty Request
+3. Heterogeneous User Program
+
+### 2. Skywalker with regional snapshot
+
+-  It is explicitly prefix-aware: in this design, each load balancer maintains prefix trees to keep an approximate view of prefix information on the load balancing targets. 
+- Between load balancers, the targets are remote load balancers, and between the load balancer and the replica, the targets are local replicas managed by that load balancer.
+- The prefix tree is a logical trie augmented with metadata to track active load balancing targets at each node. Each node stores a set of active targets associated with the prefix formed by the path from the root to that node.
+- To bound memory usage, enforces a configurable maximum tree size and evicts entries when the tree exceeds this limit, starting with the earliest in- serted records.
+- SkyWalker filter targets based on whether it is available to serve requests and pick the available target with the longest matching prefix.
+
+Each load balancer maintains two prefix trees
+1. one for local replicas it manage
+2. one for a partial view (snapshot) of other load balancers in other regions
+
+Regional snapshots do not strictly record all prefixes reside in replicas of remote regions.
+Instead, it is an approximation of prefixes that are possible to be utilized by local region forwarding to that remote region.
+
+## Selective Pushing to Mitigate Load Imbalance
+
+Existing approaches: 
+1. Blind Pushing: Route each request to a replica immediately upon arrival
+2. Selective Pushing: Requests are temporarily queued at the load balancer and sent only to replicas that meet certain conditions
+	1. By Limiting outstanding requests: load balancer selectively pushes to a replica only when the number of of outstanding requests for that replica is less than a fixed threshold
+	2. By Checking pending requests: A pending request is a request that has not been scheduled to the continuous batch yet, which indicates that the current batch is full and cannot admit more requests, as constrained by GPU memory. A background heartbeat probe is periodically sent to replicas to obtain their pending queue size (Listing 1, line 3-8). If a replica has no pending request, it is ready to serve more requests.
+Novel Approach: 
+**Selective Pushing and cross-region routing**: 
+- Each load balancer tracks the number of replicas it manages with full continuous batches and periodically synchronizes this state with peer load balancers through heartbeat messages
+- If a load balancer has at least one non-full replica and its request queue size does not exceed a small buffer, it is considered available to accept additional requests.When at least one local replica is not full, requests are always routed locally to maximize responsiveness.
+-  If all local replicas are full, the system considers remote regions and forwards requests only to regions with available replicas and short load balancer queue 
+- When multiple candidates are avail- able, either among local replicas or remote load balancers, the system breaks ties using the consistent hashing key (for SkyWalker-CH) or the prefix hit rate (for SkyWalker) to select a candidate with more prefix sharing,
+
+Algorithm
+![[Pasted image 20260903203348.png]]
 
 ---
 
-# 7. Decision
+# Experimental Setup
 
-## Decision Variable
+Probing frequency = 100ms
 
-**What exactly does the system decide?**
+Model = meta-llama/Llama-3.1-8B- Instruct
+GPU =  L4 GPU with up to 12 replicas 
 
-- [ ]  Which replica receives a request
-    
-- [ ]  Which request executes next
-    
-- [ ]  Which requests form a batch
-    
-- [ ]  Whether to admit a request
-    
-- [ ]  Whether to migrate a request
-    
-- [ ]  Resource allocation
-    
-- [ ]  Other:
-    
+Metrics:
+- TTFT (p10,p25,p75,p90)
+- E2E (p10,p25,p75,p90)
 
-## Decision Granularity
+Baselines compared: 
+- GKE Gateway 
+- Round Robin
+- Least Loaded
+- Consistent Hasing (CH)
+- SGLang Router
 
-- Per request:
-    
-- Per token:
-    
-- Per batch:
-    
-- Periodic:
-    
-- Event driven:
-    
-
+Workloads: 
+- ChatBot Arena
+- WildChat
+- Tree of Thoughts (ToT)
+- Mixed Tree
 ---
 
-# 8. Algorithm
-
-## High-Level Workflow
-
-```text
-Request / Event
-        ↓
-Collect Signals
-        ↓
-Decision Logic
-        ↓
-Select Action
-        ↓
-Update System State
-```
-
-Replace with the paper's actual workflow.
-
-## Algorithm Steps
-
-### Step 1
-
-### Step 2
-
-### Step 3
-
-### Step 4
-
-## Pseudocode / Formula
-
-```text
-Add simplified pseudocode or equations here.
-```
-
-## Time Complexity
-
-- Decision complexity:
-    
-- State update complexity:
-    
-- Memory complexity:
-    
-
----
-
-# 9. State Maintained
-
-|State|Scope|Update Rule|Purpose|
-|---|---|---|---|
-||Per-request / Per-tenant / Per-replica / Global|||
-
-Examples to investigate:
-
-- Queues
-    
-- Virtual time
-    
-- Deficit counters
-    
-- Token counters
-    
-- Prefix trees
-    
-- KV-cache metadata
-    
-- Prediction history
-    
-- Load estimates
-    
-
----
-
-# 10. Objective
-
-## What Is Being Optimized?
-
-- [ ]  Throughput
-    
-- [ ]  TTFT
-    
-- [ ]  TPOT
-    
-- [ ]  End-to-End Latency
-    
-- [ ]  Tail Latency
-    
-- [ ]  Fairness
-    
-- [ ]  Cache Hit Rate
-    
-- [ ]  GPU Utilization
-    
-- [ ]  SLO Attainment
-    
-- [ ]  Cost
-    
-- [ ]  Other:
-    
-
-## Formal Objective
-
-```text
-Write the paper's objective function here.
-```
-
-## Optimization Tradeoff
-
-> What gets worse when the optimized metric improves?
-
----
-
-# 11. Assumptions and Constraints
-
-## Assumptions
-
-- [ ]  Homogeneous GPUs
-    
-- [ ]  Heterogeneous GPUs
-    
-- [ ]  Centralized Controller
-    
-- [ ]  Distributed Controller
-    
-- [ ]  Known Prompt Length
-    
-- [ ]  Known Output Length
-    
-- [ ]  Prefix Information Available
-    
-- [ ]  Accurate Prediction Available
-    
-- [ ]  Stable Workload
-    
-- [ ]  Static Cluster
-    
-- [ ]  Other:
-    
-
-## Hidden Assumptions
-
-> What assumptions are necessary for the algorithm to work but are not heavily emphasized?
-
-## Constraints
-
----
-
-# 12. Experimental Methodology
-
-## Experimental Workloads
-
-|Dataset / Trace|Characteristics|Why Used?|
-|---|---|---|
-||||
-
-## Workload Generation
-
-- Arrival process:
-    
-- Tenant distribution:
-    
-- Prompt distribution:
-    
-- Output distribution:
-    
-- Prefix overlap:
-    
-- Burst injection:
-    
-- Synthetic modifications:
-    
-
----
-
-# 13. Simulation Setup
-
-## Simulator
-
-- Simulator:
-    
-- Version:
-    
-- What does it model?
-    
-- What does it NOT model?
-    
-
-## Simulated Cluster
-
-|Parameter|Value|
-|---|---|
-|Number of GPUs||
-|GPU Type||
-|Number of Replicas||
-|Model||
-|GPU Memory||
-|Network||
-|CPU||
-
-## Simulation Assumptions
-
----
-
-# 14. Real Hardware Setup
-
-## Hardware
-
-|Component|Configuration|
-|---|---|
-|GPU||
-|GPU Memory||
-|Number of GPUs||
-|CPU||
-|RAM||
-|Storage||
-|Network||
-
-## Serving Framework
-
-- Framework:
-    
-- Version:
-    
-- Model:
-    
-- Precision:
-    
-- Tensor Parallelism:
-    
-- Number of replicas:
-    
-- Scheduler configuration:
-    
-- KV cache configuration:
-    
-
----
-
-# 15. Metrics
-
-|Metric|Definition|Why Important?|
-|---|---|---|
-|Throughput|||
-|TTFT|||
-|TPOT|||
-|P50|||
-|P95|||
-|P99|||
-|Jain's Fairness Index|||
-|Cache Hit Rate|||
-|GPU Utilization|||
-|SLO Attainment|||
-
-## Metric Formulas
-
-```text
-Add important formulas here.
-```
-
----
-
-# 16. Baselines
-
-|Baseline|Why Compared?|Strong / Weak?|
-|---|---|---|
-||||
-
-## Missing Baselines?
-
-> What baseline should have been included but was not?
-
----
-
-# 17. Key Results
+# Key Results
 
 ## Main Quantitative Results
 
-|Experiment|Result|Improvement|
-|---|---|---|
-||||
-
-## Most Important Figure
-
-**Figure:**
-
-**What it shows:**
-
-**Why it matters:**
+![[Pasted image 20260903203956.png]]
 
 ## Main Takeaway
 
----
-
-# 18. Failure Cases and Limitations
-
-## Where Does It Fail?
-
-## Limitations Stated by Authors
-
-## Limitations I Identified
-
-## Scalability Concerns
-
-Consider:
-
-- CPU overhead
-    
-- Memory overhead
-    
-- Network overhead
-    
-- Metadata overhead
-    
-- Centralized bottleneck
-    
-- Number of tenants
-    
-- Number of replicas
-    
+- We show the service throughput of multi-turn conversation datasets (ChatBot Arena and Wild- Chat) in Figrue 8a, 8b. Both variants of SkyWalker im- prove service throughput by 1.12-1.2× compared to single load balancer solutions.
+- 1.12-2.06× higher throughput and 1.74-6.30× lower latency compared to existing load balancers, while reducing total serving cost by 25%
 
 ---
-
-# 19. Challenges and Engineering Problems
-
-|Challenge|Cause|Solution Used|
-|---|---|---|
-||||
-
-## Failure / Edge Cases
-
----
-
-# 20. Comparison With FairRoute
-
-## Which Signal Does This Paper Optimize?
-
-|Fairness|Locality|Prediction|
-|---|---|---|
-|Yes / No|Yes / No|Yes / No|
-
-## What Can FairRoute Reuse?
-
-## What Does FairRoute Need Beyond This?
-
-## Threat to FairRoute
-
-> Could this paper invalidate the FairRoute research gap or make the proposed contribution trivial?
-
-## How Could This Paper Be Extended to Compete With FairRoute?
-
----
-
-# 21. Baseline Decision
-
-## Should We Implement This?
-
--  Yes, directly
-    
--  Simplified version
-    
--  Use as conceptual baseline only
-    
--  Not needed
-    
-
-### Reason
-
-## Comparison Priority
-
-`High / Medium / Low`
-
----
-
-# 22. Implementation Difficulty
-
-## Difficulty
-
-`Easy / Medium / Hard`
-
-## Why?
-
-## Dependencies
-
-## Estimated Components Needed
-
-```text
-Component 1
-Component 2
-Component 3
-```
-
----
-
-# 23. Evidence
-
-## Important Sections
-
-|Claim / Observation|Page|Section / Figure / Table|
-|---|---|---|
-||||
-
-## Important Quotes
-
-> Keep only short quotes necessary for later verification.
-
----
-
-# 24. Final Research Notes
-
-## What I Learned
-
-## Open Questions
-
-## Research Opportunities
-
-## Connection to Other Papers
-
-- [[Paper Name]]
-    
-- [[Paper Name]]
-    
-
----
-
-# 25. Paper Verdict
-
-## One-Sentence Verdict
-
-## Importance to FairRoute
-
-⭐ / ⭐⭐ / ⭐⭐⭐ / ⭐⭐⭐⭐ / ⭐⭐⭐⭐⭐
-
-## Deep Dive Required?
-
-- [ ]  Yes
-    
-- [ ]  No
-    
-
-## Read Again Before Implementation?
-
-- [ ]  Yes
-    
-- [ ]  No

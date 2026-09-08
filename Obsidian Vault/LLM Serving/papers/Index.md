@@ -32,7 +32,7 @@
 2. [[2025 - kLPM]]
 3. [[2025 - NexusSched]]
 4. [[2025 - SkyWalker]]. 
-5. 2026 - Lodestar
+5. [[2026 - Lodestar]]
 6. 2026 - Online Linear Programming for Multi-Objective Routing
 7. 2026 - Online Routing at Scale / BalanceRoute
 8. 2026 - RouteBalance
