@@ -5,7 +5,7 @@ authors:
 year: "2026"
 venue: EuroSys '26
 paper_type: research
-status: reading
+status: read
 rating:
 url: ""
 pdf: "[[2026 - PiLLM.pdf]]"
