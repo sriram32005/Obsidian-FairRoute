@@ -7,14 +7,14 @@
 
 #  My findings 😎
 
-| #   | Dataset                   | Notes (useful columns)                                                                                               |
-| --- | ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1   | ShareGPT                  | Conversations                                                                                                        |
-| 2   | LMSYS-Chat-1M             | Conversations                                                                                                        |
-| 3   | Azure LLM Inference Trace | Content and LLM tokens                                                                                               |
-| 4   | BurstGPT                  | conversation with requst and response tokens count                                                                   |
-| 5   | WildChat-1M               | conversation with ip-hash (maybe useful in fairness) and http headers                                                |
-| 6   | Mooncake                  | conversation, tool-agent, synthetic<br><br>https://github.com/kvcache-ai/Mooncake/blob/main/FAST25-release/README.md |
+| #   | Dataset                   | Notes (useful columns)                                                                                                                                                                                             |
+| --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | ShareGPT                  | Conversations<br><br>https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/blob/main/README.md (yet to go through the dataset)<br><br>https://huggingface.co/datasets/shibing624/sharegpt_gpt4 |
+| 2   | LMSYS-Chat-1M             | Conversations<br><br>https://huggingface.co/datasets/lmsys/lmsys-chat-1m<br>                                                                                                                                       |
+| 3   | Azure LLM Inference Trace | Content and LLM tokens<br><br>https://github.com/Azure/AzurePublicDataset/blob/master/AzureLLMInferenceDataset2023.md                                                                                              |
+| 4   | BurstGPT                  | conversation with requst and response tokens count<br><br>https://github.com/HPMLL/BurstGPT/blob/main/README.md                                                                                                    |
+| 5   | WildChat-1M               | conversation with ip-hash (maybe useful in fairness) and http headers<br><br>https://huggingface.co/datasets/allenai/WildChat-1M                                                                                   |
+| 6   | Mooncake                  | conversation, tool-agent, synthetic<br><br>https://github.com/kvcache-ai/Mooncake/blob/main/FAST25-release/README.md                                                                                               |
 I think this is more than enough (all links at the end of this file)
 
 ---
