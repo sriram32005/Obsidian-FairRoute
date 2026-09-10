@@ -7,14 +7,15 @@
 
 #  My findings 😎
 
-| #   | Dataset                   | Notes (useful columns)                                                |
-| --- | ------------------------- | --------------------------------------------------------------------- |
-| 1   | ShareGPT                  | Conversations                                                         |
-| 2   | LMSYS-Chat-1M             | Conversations                                                         |
-| 3   | Azure LLM Inference Trace | Content and LLM tokens                                                |
-| 4   | BurstGPT                  | conversation with requst and response tokens count                    |
-| 5   | WildChat-1M               | conversation with ip-hash (maybe useful in fairness) and http headers |
-
+| #   | Dataset                   | Notes (useful columns)                                                                                               |
+| --- | ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1   | ShareGPT                  | Conversations                                                                                                        |
+| 2   | LMSYS-Chat-1M             | Conversations                                                                                                        |
+| 3   | Azure LLM Inference Trace | Content and LLM tokens                                                                                               |
+| 4   | BurstGPT                  | conversation with requst and response tokens count                                                                   |
+| 5   | WildChat-1M               | conversation with ip-hash (maybe useful in fairness) and http headers                                                |
+| 6   | Mooncake                  | conversation, tool-agent, synthetic<br><br>https://github.com/kvcache-ai/Mooncake/blob/main/FAST25-release/README.md |
+I think this is more than enough (all links at the end of this file)
 
 ---
 
